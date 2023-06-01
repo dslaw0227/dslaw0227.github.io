@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="description" content="Duncan Law's Final Project for ITP 104: A portfolio for my girlfriend, Mina Stojanovic, highlighting the various projects she has worked. Mina will mainly use this site to show off her skills to prospective employers.">
+
+        <title>Home | Mina Stojanovic</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="flexslider.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="jquery.flexslider.js"></script>
+
+        <script>
+            $(window).load(function() {
+              $('.flexslider').flexslider();
+            });
+        </script>
+
+        <style>
+            #name h1 {
+                font-family: 'Montserrat-Medium', sans-serif;
+                text-align: center;
+                font-size: 4em;
+                margin-top: 0px;
+                color: #00a5cd;
+            }
+            #name p {
+                font-family: 'Montserrat-Regular', sans-serif;
+                text-align: center;
+                margin-top: -25px;
+                margin-bottom: 35px;
+            }
+            #layout {
+                display: flex;
+                flex-wrap: wrap;
+                width: 1100px;
+                justify-content: center;
+            }
+            #layout > div {
+                width: 580px;
+                height: 300px;
+                margin-bottom: 35px;
+            }
+            #layout .left {
+                text-align: right;
+                padding-right: 20px;
+            }
+            #layout .right {
+                text-align: left;
+                padding-left: 20px;
+            }
+            #layout h2 {
+                font-size: 2em;
+                font-family: 'Montserrat-Medium', sans-serif;
+                margin-top: -2px;
+                margin-bottom: -10px;
+            }
+            #layout p {
+                font-family: 'Montserrat-Regular', sans-serif;
+                margin-bottom: -10px;
+            }
+            #layout .flexslider {
+                width: 492px;
+                display: flex;
+                justify-content: center;
+                overflow: hidden;
+            }
+            #layout .flexslider .slides.cs img {
+                height: auto;
+                width: 500px;
+                padding: 9.915px;
+            }
+            #layout .description .button {
+                width: 80px;
+                height: 30px;
+                text-align: center;
+                background-color: #00a5cd;
+                padding-top: 10px;
+                font-family: 'Montserrat-Regular', sans-serif;
+            }
+            #layout .description .button.rr {
+                margin-top: 89px;
+            }
+            #layout .description .button.cs {
+                margin-top: 38px;
+                float: right;
+                width: 145px;
+            }
+            #layout .description .button.oa {
+                margin-top: 20px;
+            }
+            #layout .description .button:hover {
+                background-color: #008fb3;
+            }
+            #layout .description .button a {
+                text-decoration: none;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+    <div id="main">
+        <div id="navbar">
+            <a href="index.html"><img src="images/minalogo.png" alt="Logo"></a>
+            <div class="navbar_padding"></div>
+            <a class="active-nav" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div id="name">
+            <h1>Mina Stojanovic</h1>
+            <p>Programmer, Designer, and Professional Debugger</p>
+        </div>
+        <div id="layout">
+            <div class="flexslider">
+                <ul class="slides rr">
+                    <li>
+                        <img src="images/End_Cutscene.png" alt="End_Cutscene">
+                    </li>
+                    <li>
+                        <img src="images/Menu.png" alt="Menu">
+                    </li>
+                    <li>
+                        <img src="images/Bill.png" alt="Bill">
+                    </li>
+                    <li>
+                        <img src="images/Switch.png" alt="Switch">
+                    </li>
+                    <li>
+                        <img src="images/Raccoon1.png" alt="Raccoon">
+                    </li>
+                    <li>
+                        <img src="images/Town.png" alt="Town">
+                    </li>
+                    <li>
+                        <img src="images/Mechanic1.png" alt="Mechanic">
+                    </li>
+                    <li>
+                        <img src="images/Puzzle_Room.png" alt="Puzzle_Room">
+                    </li>
+                    <li>
+                        <img src="images/Raft.png" alt="Raft">
+                    </li>
+                </ul>
+            </div>
+            <div class="description right">
+                <h2>Raccoon Rescue</h2>
+                <p>You play as a momma raccoon separated from her children in a plane crash. Your quest to reunite with your family takes you to three islands, each with its own unique challenges.</p>
+                <p>This was my first solo project in Unity. I programmed, designed, and wrote everything. I created 3 unique puzzles, a dialogue system, an attack mechanic, and all of the animations myself. It may not be perfect, but it will always be my first game.</p>
+                <div class="button rr">
+                    <a href="https://minastoj.itch.io/raccoon-rescue" target="blank">Play</a>
+                </div>
+            </div>
+            <div class="description left">
+                <h2>Cephalopod Sidestep</h2>
+                <p>You play an innocent octopus captured by bears. As you attempt to escape, the bear's true intentions are revealed, and it's worse than you ever could've imagined!</p>
+                <p>I, alongside my partner, developed this game over one semester for a class in the Spring of 2023. All of the mechanics, every level design, the UI, and some animations are my own work. My partner produced almost all of the art and some animations, all of which I implemented. We also worked closely with a group of students from the Berklee School of Music to produce the game's soundtrack.</p>
+                <div class="button cs">
+                    <a href="https://minastojanovic.itch.io/cephalopod-sidestep" target="_blank">Play</a>
+                </div>
+            </div>
+            <div class="flexslider">
+                <ul class="slides cs">
+                    <li>
+                        <img src="images/CS_Menu.jpeg" alt="Menu">
+                    </li>
+                    <li>
+                        <img src="images/Basement.jpeg" alt="Basement">
+                    </li>
+                    <li>
+                        <img src="images/Warehouse.jpeg" alt="Warehouse">
+                    </li>
+                    <li>
+                        <img src="images/Kitchen.jpeg" alt="Kitchen">
+                    </li>
+                    <li>
+                        <img src="images/DiningRoom.jpeg" alt="Dining Room">
+                    </li>
+                </ul>
+            </div>
+            <div class="flexslider">
+                <ul class="slides oa">
+                    <li>
+                        <img src="images/OA_Logo.png" alt="OA Logo">
+                    </li>
+                    <li>
+                        <img src="images/YokaiMaki.jpeg" alt="Yokai Maki Promo">
+                    </li>
+                    <li>
+                        <img src="images/YokaiMakiGame1.jpg" alt="Yoki Maki Cooking">
+                    </li>
+                    <li>
+                        <img src="images/YokaiMaki1.jpeg" alt="Yokai Maki Header">
+                    </li>
+                    <li>
+                        <img src="images/YokaiMakiGame2.jpg" alt="Yokai Maki Fishing">
+                    </li>
+                    <li>
+                        <img src="images/CheckItOut.jpeg" alt="Check It Out Header">
+                    </li>
+                    <li>
+                        <img src="images/CheckItOut1.jpg" alt="Check It Out Gameplay">
+                    </li>
+                </ul>
+            </div>
+            <div class="description right">
+                <h2>Open Alpha</h2>
+                <p>This is my third semester with Open Alpha, USC's game design club, which brings a game from conception to open alpha release every semester.</p>
+                <p>Spring 2022: <em>Check it Out!</em><br>You play as a cashier running the register, preventing theft, and talking to customers. I was on both the design and programming teams.</p>
+                <p>Fall 2022: <em>Yōkaimaki</em><br>You have taken over the family sushi business. Catch Yōkai to create special sushi and keep your restaurant afloat. I was Co-Design Lead and a programmer for this project.</p>
+                <div class="button oa">
+                    <a href="https://openalphausc.weebly.com/projects.html" target="blank">More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer-content">
+            <div class="name">
+                &copy; Mina Stojanovic 2023
+            </div>
+            <div class="socials">
+                <a class="linkedin" href="https://www.linkedin.com/in/mina-stojanovic-46176b220/" target="blank"><img src="images/LinkedIn_Logo.png" alt="LinkedIn Logo"></a>
+                <a class="itch" href="https://minastoj.itch.io/" target="blank"><img src="images/Itch_Logo.png" alt="Itch Logo"></a>
+                <a class="mail" href="mailto:mstojano@usc.edu" target="blank"><img src="images/Mail_Icon.png" alt="Mail Icon"></a>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

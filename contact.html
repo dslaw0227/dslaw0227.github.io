@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="description" content="This page allows the site's visitors to send Mina a message. Because it is outside the scope of this class, I set up another GitHub repository in which form entries are sent to Mina's email address.">
+
+        <title>Contact | Mina Stojanovic</title>
+
+        <link rel="stylesheet" href="style.css">
+        
+        <style>
+            h2 {
+                font-family: 'Montserrat-Medium', sans-serif;
+                font-size: 2em;
+                margin-left: 10%;
+            }
+            .form-content {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 10px;
+                font-family: 'Montserrat-Regular', sans-serif;
+            }
+            .form-col {
+                display: flex;
+                flex-direction: column;
+            }
+            .form-col.left {
+                width: 40%;
+                margin-right: 10%;
+            }
+            .form-col.right {
+                width: 50%;
+            }
+            .form-row {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+            }
+            .name-row {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 20px;
+            }
+            .name-col {
+                display: flex;
+                flex-direction: column;
+                width: 45%;
+            }
+            .name-col.first {
+                margin-right: 10%;
+            }
+            label {
+                margin-bottom: 10px;
+            }
+            ::placeholder, input[type="text"] {
+                font-family: 'Montserrat-Regular', sans-serif;
+            }
+            textarea {
+                resize: none;
+                height: 100%;
+                margin-bottom: 20px;
+                font-family: 'Montserrat-Regular', sans-serif;
+            }
+            .submit {
+                width: 7%;
+                height: 30px;
+                font-family: 'Montserrat-Regular', sans-serif;
+                background-color: #00a5cd;
+                color: white;
+                border: 0px;
+                border-radius: 7px;
+            }
+            button.submit:hover {
+                background-color: #0092b5;
+                font-family: 'Montserrat-SemiBold', sans-serif;
+                font-size: 0.84em;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div id="navbar">
+                <a href="index.html"><img src="images/minalogo.png" alt="Logo"></a>
+                <div class="navbar_padding"></div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a class="active-nav" href="contact.html">Contact</a>
+            </div>
+            <div id="form">
+                <h2>Get in touch!</h2>
+                <form action="confirmation.html">
+                    <div class="form-content">
+                        <div class="form-col left">
+                            <div class="name-row">
+                                <div class="name-col first">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" id="first-name" placeholder="Mina">
+                                </div>
+                                <div class="name-col">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" id="last-name" placeholder="Stojanovic">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" placeholder="mstojano@usc.edu">
+                            </div>
+                            <div class="form-row">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject">
+                            </div>
+                        </div>
+                        <div class="form-col right">
+                            <label for="message">Message</label>
+                            <textarea id="message"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-submit">
+                        <button class="submit" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer-content">
+                <div class="name">
+                    &copy; Mina Stojanovic 2023
+                </div>
+                <div class="socials">
+                    <a class="linkedin" href="https://www.linkedin.com/in/mina-stojanovic-46176b220/" target="blank"><img src="images/LinkedIn_Logo.png" alt="LinkedIn Logo"></a>
+                    <a class="itch" href="https://minastoj.itch.io/" target="blank"><img src="images/Itch_Logo.png" alt="Itch Logo"></a>
+                    <a class="mail" href="mailto:mstojano@usc.edu" target="blank"><img src="images/Mail_Icon.png" alt="Mail Icon"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
